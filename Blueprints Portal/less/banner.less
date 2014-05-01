@@ -1,0 +1,53 @@
+//// Banner area list-style-position
+//
+
+header[role="banner"]{
+	.utility-nav{
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 1999;
+		>ul {
+			list-style-type: none;
+			>li {
+				float: left;
+				>a {
+					display: inline-block;
+					padding: 12px 12px;
+					@media (max-width: (@grid-float-breakpoint - 1)){
+						span{
+							.sr-only();
+						}
+						.icon {
+							font-size: 2em;
+							line-height: 1.2;
+						}
+					}
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+
+	.banner-brand{
+		padding-top: 40px;
+	}
+	.container {
+		position: relative;
+	}
+}
+
+//Apply .navbar-inverse style to Expanded navbar
+
+@media (min-width: @grid-float-breakpoint) {
+	.navbar-default {
+		.navbar-inverse();
+		.navbar-nav >li >a {
+			text-transform: uppercase;
+			font-size: 82%;
+			font-weight: bold;
+		}
+	}
+}

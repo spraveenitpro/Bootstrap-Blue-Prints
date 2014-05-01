@@ -1,0 +1,25 @@
+header[role="banner"] .utility-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1999;
+}
+header[role="banner"] .utility-nav > ul {
+  list-style-type: none;
+}
+header[role="banner"] .utility-nav > ul > li {
+  float: left;
+}
+header[role="banner"] .utility-nav > ul > li > a {
+  display: inline-block;
+  padding: 12px 12px;
+}
+header[role="banner"] .utility-nav > ul > li > a:hover {
+  text-decoration: none;
+}
+header[role="banner"] .banner-brand {
+  padding-top: 40px;
+}
+header[role="banner"] .container {
+  position: relative;
+}
